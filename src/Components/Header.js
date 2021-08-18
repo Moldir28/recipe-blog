@@ -1,9 +1,13 @@
 import React from "react";
 
+import "./Header.css";
+
 function Header() {
   return (
-    <div>
-      <h1>test</h1>
+    <div className="wrapper">
+      <div className="header__title">
+        <h1>Food Loose</h1>
+      </div>
     </div>
   );
 }
