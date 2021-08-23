@@ -1,7 +1,4 @@
-.main__nav {
-}
-
-ul {
+.main__nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -9,9 +6,11 @@ ul {
   background-color: #333333;
   display: flex;
   justify-content: center;
+  font-family: sans-serif;
+  font-size: 20px;
 }
 
-li a {
+.main__nav li a {
   display: block;
   color: white;
   text-align: center;
@@ -19,6 +18,10 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+.main__nav li a:hover {
   background-color: #111111;
+}
+
+.section__main img {
+  margin-left: 1em;
 }
