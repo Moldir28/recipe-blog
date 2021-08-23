@@ -1,4 +1,5 @@
 import marked from "marked";
+import './Post.css'
 
 export const Post = ({ article }) => {
   const { name, featuredImage, description } = article.fields;
