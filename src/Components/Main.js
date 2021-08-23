@@ -19,7 +19,7 @@ function Main({ children }) {
           </li>
         </ul>
       </div>
-      <div>{children}</div>
+      <div className="section__main">{children}</div>
     </div>
   );
 }
