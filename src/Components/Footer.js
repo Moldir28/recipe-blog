@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import './Footer.css'
 import {FiFacebook} from 'react-icons/fi'; 
 import {FiInstagram} from 'react-icons/fi'
+import {FiTwitter} from 'react-icons/fi'
+import {RiPinterestLine} from 'react-icons/ri'
 
 
 
@@ -18,7 +20,8 @@ function Footer() {
             <div className='logos'>
                 <FiFacebook className='smLogo' />
                 <FiInstagram className='smLogo' />
-        
+                <FiTwitter className='smLogo' />
+                <RiPinterestLine className='smLogo'/>
             </div>
         </div>
     )
