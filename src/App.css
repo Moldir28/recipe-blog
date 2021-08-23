@@ -27,10 +27,10 @@ div {
 /* make picture smaller and expand on click */
 
 .posts h1,
-h2,
-h3,
-h4,
-h5 {
+.posts h2,
+.posts h3,
+.posts h4,
+.posts h5 {
   margin: 1em;
 }
 
