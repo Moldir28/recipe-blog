@@ -8,6 +8,7 @@ import Main from "./Components/Main";
 
 import { client } from "./client";
 import { Posts } from "./Components/Posts";
+import { Recipe } from "./Components/Recipe";
 
 import "./App.css";
 
@@ -26,11 +27,17 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <Switch>
-          <Main>
-            <Posts posts={articles} />
-          </Main>
-        </Switch>
+
+        <Main>
+          <Switch>
+            <Route exact path="/">
+              <Posts posts={articles} />
+            </Route>
+            <Route path="/recipe/:id">
+              <Recipe />
+            </Route>
+          </Switch>
+        </Main>
 
         <Footer />
       </div>
