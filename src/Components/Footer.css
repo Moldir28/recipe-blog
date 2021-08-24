@@ -16,7 +16,7 @@
 .webName {
   font-family: "Style script";
   font-size: 2.7rem;
-  margin-top: 10px;
+  margin-top: 7px;
 }
 
 .subscribe {
@@ -26,6 +26,7 @@
   align-items: center;
   padding: 1rem;
   font-family: "Playfair display";
+  margin-top: 0;
 }
 
 .input {
@@ -40,18 +41,19 @@
 .logos {
   width: 100%;
   display: flex;
-  margin: 0 auto;
+  margin: 5px auto;
+  padding-bottom: 3px;
   justify-content: center;
   align-items: center;
 }
 
 .smLogo {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin: 0.1rem 0.2rem;
-  padding: 3%;
-  border: 1px solid white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0.2rem 0.6rem;
+    padding: 1%;
+    border: 1px solid #5eb6f9; 
 }
 
 .subscribe h5 {
