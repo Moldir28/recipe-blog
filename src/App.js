@@ -8,6 +8,7 @@ import Main from "./Components/Main";
 import { client } from "./client";
 
 import { Posts } from "./Components/Posts";
+import { Recipe } from "./Components/Recipe";
 
 import "./App.css";
 import { Recipe } from "./Components/Recipe";
@@ -33,7 +34,7 @@ function App() {
             <Route exact path="/">
               <Posts posts={articles} />
             </Route>
-            <Route path="/Recipe/:id">
+            <Route path="/recipe/:id">
               <Recipe />
             </Route>
           </Switch>

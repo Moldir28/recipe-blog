@@ -1,19 +1,18 @@
-import marked from "marked";
+import { Link } from "react-router-dom";
 import "./Post.css";
 import { Link } from "react-router-dom";
 
 export const Post = ({ article, key }) => {
-  const { name, featuredImage, description, recipeIntro } = article.fields;
-  const postDescription = marked(description);
-  const whatevs = () => {
-    console.log(article.sys.id);
-  };
-  
+  const { name, featuredImage, recipeIntro } = article.fields;
+  console.log(article);
   return (
-    <div className="post" onClick={whatevs}>
-      <Link to={`/recipe/${article.sys.id}`}>
-      <h2 className="title">{name}</h2>
-      </Link>
+    <div className="post__home">
+      <div>
+        <Link to={`/recipe/${article.sys.id}`}>
+          <h2 className="title">{name}</h2>
+        </Link>
+      </div>
+
       {featuredImage && (
         <img
           className="featuredImage"
@@ -23,7 +22,6 @@ export const Post = ({ article, key }) => {
         />
       )}
       <p>{recipeIntro}</p>
-      {/* <section dangerouslySetInnerHTML={{ __html: postDescription }} /> */}
     </div>
   );
 };

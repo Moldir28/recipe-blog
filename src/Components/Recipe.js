@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import marked from "marked";
 import { client } from "../client";
+import marked from "marked";
 
-import "./Post.css";
+import "./Recipe.css";
 
 export const Recipe = () => {
   const [article, setArticle] = useState([]);
@@ -18,19 +18,23 @@ export const Recipe = () => {
         setLoading(false);
       })
       .catch(console.error);
-    }, []);
-  
-    if (loading) return "Loading...";
-  
-    return (
-      <div>
-        <div>{article.fields.name}</div>
+  }, []);
+
+  if (loading) return "Loading...";
+  const postDescription = marked(article.fields.description);
+  return (
+    <div className="posts">
+      <h2 className="title">{article.fields.name}</h2>
+      {article.fields.featuredImage.fields.file.url && (
         <img
           className="featuredImage"
           src={article.fields.featuredImage.fields.file.url}
           alt={article.fields.name}
           title={article.fields.name}
         />
-      </div>
-    );
-}
+      )}
+
+      <section dangerouslySetInnerHTML={{ __html: postDescription }} />
+    </div>
+  );
+};
