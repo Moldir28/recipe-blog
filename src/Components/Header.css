@@ -3,6 +3,9 @@
   background-image: url(../images/img2.jpg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.90;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .header__title h1 {
@@ -14,12 +17,18 @@
   text-align: center;
   font-size: 6em;
   font-family: "Style Script", cursive;
-  color: rgb(255, 255, 255);
-  text-shadow: 3px 4px 0px rgb(255, 0, 0);
+  color:#050a30 ; 
+  text-shadow: 6px 6px 6px #f4f6fc; 
 }
 
 @media only screen and (min-width: 768px) {
   .header__title h1 {
     font-size: 9em;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+    text-align: center;
   }
 }

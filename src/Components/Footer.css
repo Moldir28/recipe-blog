@@ -6,7 +6,6 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  margin-top: 3%;
   background-color: #050a30;
   color: #5eb6f9;
   justify-content: center;
@@ -48,11 +47,11 @@
 }
 
 .smLogo {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     margin: 0.2rem 0.6rem;
-    padding: 1%;
+    padding: 0.5%;
     border: 1px solid #5eb6f9; 
 }
 

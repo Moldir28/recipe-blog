@@ -11,7 +11,7 @@ import { Posts } from "./Components/Posts";
 import { Recipe } from "./Components/Recipe";
 
 import "./App.css";
-import { Recipe } from "./Components/Recipe";
+
 
 function App() {
   const [articles, setArticles] = useState([]);

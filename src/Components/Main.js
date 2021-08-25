@@ -2,7 +2,7 @@ import "./Main.css";
 
 function Main({ children }) {
   return (
-    <div>
+    <div className='main_content'>
       <div className="main__nav">
         <ul>
           <li>

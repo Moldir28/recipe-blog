@@ -23,18 +23,19 @@ export const Recipe = () => {
   if (loading) return "Loading...";
   const postDescription = marked(article.fields.description);
   return (
-    <div className="posts">
-      <h2 className="title">{article.fields.name}</h2>
+    <div className="posts" id='singlePost'>
+      <h2 className="title" id='recipeTitle'>{article.fields.name}</h2>
       {article.fields.featuredImage.fields.file.url && (
         <img
           className="featuredImage"
+          id='recipeImage'
           src={article.fields.featuredImage.fields.file.url}
           alt={article.fields.name}
           title={article.fields.name}
         />
       )}
 
-      <section dangerouslySetInnerHTML={{ __html: postDescription }} />
+      <section id='recipe' dangerouslySetInnerHTML={{ __html: postDescription }} />
     </div>
   );
 };
