@@ -5,7 +5,7 @@ export const Posts = ({ posts }) => {
     <div>
       <div className="posts">
         {posts.map((article, index) => (
-          <Post article={article} key={index} />
+           <Post article={article} key={index} />
         ))}
       </div>
     </div>
