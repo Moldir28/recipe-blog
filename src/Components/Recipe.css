@@ -1,15 +1,14 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
 #singlePost {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   margin: 0 auto;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
 }
 
@@ -18,7 +17,7 @@
 }
 
 #recipeImage {
-  width: 40%; 
+  width: 40%;
 }
 
 #recipe {
@@ -27,14 +26,14 @@
   justify-content: center;
   align-items: center;
   margin: 2rem auto;
-  color: #050a30; 
-  font-family: 'Playfair display';
+  color: #050a30;
+  font-family: "Playfair display";
   line-height: 1.5em;
   width: 100%;
 }
 
 #recipe h1 {
-  font-family: 'Playfair display';
+  font-family: "Playfair display";
   font-size: 1.7rem;
   font-style: italic;
   margin-bottom: 1rem;
@@ -48,7 +47,7 @@
 }
 
 #recipe h3 {
-  font-family: 'Playfair display';
+  font-family: "Playfair display";
   font-style: italic;
   font-size: 1.5rem;
   font-weight: bold;
@@ -56,10 +55,9 @@
 }
 
 #recipe p {
-  width: 80%;
-  font-family: 'Playfair display';
+  width: 60%;
+  font-family: "Playfair display";
   margin-bottom: 0.5rem;
   font-size: 1rem;
   text-align: center;
 }
-
